@@ -51,7 +51,7 @@ class TwigLoader extends ComponentsLoader {
   /**
    * {@inheritdoc}
    */
-  public function prependPath($path, $namespace = self::MAIN_NAMESPACE) {
+  public function prependPath($path, $namespace = self::MAIN_NAMESPACE): void {
     $this->cache = $this->errorCache = [];
 
     $path = rtrim($path, '/\\');
